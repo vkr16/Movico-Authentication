@@ -2,7 +2,8 @@
 
 <body style="background-image: url('<?= URLROOT ?>/public/img/banner.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
 
-<?php require APPROOT . '/views/includes/navigation.php'; ?>
+<?php require APPROOT . '/views/includes/navigation.php';
+ ?>
 
 <!-- mine -->
 <div class="container text-white d-flex text-light" style="font-family: Montserrat; height: 50vh">

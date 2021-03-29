@@ -78,7 +78,7 @@ class Users extends Controller {
                 // Hash password
                 $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
 
-                if ($data['usernameError']=='' AND $data['passwordError']=='' AND $data['confirmPasswordError']=='' AND $data['emailError']=='') {
+                if ($data['usernameError']=='' && $data['passwordError']=='' && $data['confirmPasswordError']=='' && $data['emailError']=='') {
                     //Register user from model function
                     if ($this->userModel->register($data)) {
                         //Redirect to the login page
@@ -91,6 +91,8 @@ class Users extends Controller {
                 }
             }
         }
+
+        
         if (!isset($_SESSION['user_id'])) {
             // $this->view('users/login', $data);
             $this->view('users/register', $data);

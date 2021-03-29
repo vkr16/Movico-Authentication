@@ -23,6 +23,7 @@ session_start();
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Lobster&display=swap" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="<?= $base ?>/public/img/icon.png">
 
     <style type="text/css">	
     @font-face {
@@ -138,7 +139,7 @@ session_start();
 	    	<p style="font-family: monospace;color: #eee" class="mt-3 mb-0"><span class="" style="color:#e83e8c">PisangBenyek~</span> Mesageeee</p>
     	</div>
     	
-    	<code class="mt-3">Movichat:\PisangBenyek>
+    	<code class="mt-3">Movichat:\<?= $_SESSION['username']?>>
     		<input type="text" id="code" name="code" class="bg-transparent text-info" style="border: none;width: 50%" placeholder="Input Your Channel Code"><input type="text" id="message" name="message" class="form-control bg-transparent text-warning p-0" style="border: none!important; font-family: monospace; " autofocus="" placeholder="Type your message . . ."></code>
     </div>
     <div>

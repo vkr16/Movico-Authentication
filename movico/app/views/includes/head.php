@@ -14,6 +14,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Lobster&display=swap" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="icon" type="image/png" href="<?= URLROOT ?>/public/img/icon.png">
+
 </head>
 
 
